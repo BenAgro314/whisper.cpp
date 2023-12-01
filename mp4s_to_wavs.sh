@@ -24,5 +24,5 @@ for input_file in "$input_dir"/*.mp4; do
     output_file="$output_dir"/"$filename".wav
 
     # Run ffmpeg to convert the file
-    ffmpeg -i "$input_file" -ar 16000 "$output_file"
+    ffmpeg -i "$input_file" -ar 16000 "$output_file" -y
 done
